@@ -1,0 +1,23 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Feed Url</mat-label>
+    <input matInput type="url" [formControl]="urlFormControl" placeholder=" m">
+    <mat-error *ngIf="urlFormControl.hasError('pattern') && !urlFormControl.hasError('required')">
+      Please enter a valid url
+    </mat-error>
+    <mat-error *ngIf="urlFormControl.hasError('required')">
+      Url is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <button mat-mini-fab color="primary" (click)="add()"  >
+    <mat-icon>add_circle_outline</mat-icon>
+  </button>
+</form>
+<mat-card>
+  <div>
+    List of Feeds
+  </div>
+  <mat-nav-list>
+    <a mat-list-item [routerLink]="['/feed', feed.id]" *ngFor="let feed of feeds"> {{ feed.url }} </a>
+  </mat-nav-list>
+</mat-card>

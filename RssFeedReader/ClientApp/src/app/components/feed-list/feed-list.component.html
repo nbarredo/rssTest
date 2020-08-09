@@ -1,0 +1,6 @@
+<div *ngIf="feeds">
+  <app-feed-card *ngFor="let feed of feeds" [feed]="feed.details" [feedId]="feed.id">
+
+  </app-feed-card>
+
+</div>

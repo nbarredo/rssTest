@@ -1,0 +1,12 @@
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\bin\Release\netcoreapp3.1\Rss.Data.deps.json
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\bin\Release\netcoreapp3.1\Rss.Data.runtimeconfig.json
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\bin\Release\netcoreapp3.1\Rss.Data.runtimeconfig.dev.json
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\bin\Release\netcoreapp3.1\Rss.Data.dll
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\bin\Release\netcoreapp3.1\Rss.Data.pdb
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.csprojAssemblyReference.cache
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.AssemblyInfoInputs.cache
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.AssemblyInfo.cs
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.csproj.CoreCompileInputs.cache
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.dll
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.pdb
+C:\Users\janus\source\repos\Rss.Feed\Rss.Data\obj\Release\netcoreapp3.1\Rss.Data.genruntimeconfig.cache

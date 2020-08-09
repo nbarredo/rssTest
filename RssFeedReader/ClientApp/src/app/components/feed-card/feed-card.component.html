@@ -1,0 +1,12 @@
+<span *ngIf="feed" class="feed-container">
+  <h4>Name: {{feed.title}}</h4>
+  <mat-card class="feed-card">
+  <a [routerLink]="['/feed', feedId]"> {{feed.description}}</a>
+  <div>
+    <img *ngIf="feed.imageUrl" class="feed-image" [src]="feed.imageUrl">
+    <button class="subscribe-button" mat-raised-button [color]="isSubscribed?'warn':'primary'" (click)="action()">
+      {{isSubscribed?'Unsubscribe': 'Subscribe'}}
+    </button>
+  </div>
+</mat-card>
+</span>

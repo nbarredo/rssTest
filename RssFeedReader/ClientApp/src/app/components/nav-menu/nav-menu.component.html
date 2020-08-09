@@ -1,0 +1,28 @@
+<header>
+  <mat-toolbar color="primary"
+               class="navbar navbar-expand-sm navbar-toggleable-sm   border-bottom box-shadow mb-3">
+
+    <div class="container" *ngIf="loggedIn">
+      <span>Welcome {{name}}</span>
+      <a class="navbar-brand text-white" [routerLink]="['/']">Rss Feed Reader</a>
+      <ul class="navbar-nav flex-grow">
+        <li class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link  text-white" [routerLink]="['/add']">Add Feed</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-white" [routerLink]="['/all']">All News</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-white" [routerLink]="['/feeds']">Feeds</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-white" [routerLink]="['/my-news']">My News</a>
+        </li>
+      </ul>
+    </div>
+    <button class="v-sub" mat-raised-button *ngIf="!loggedIn" (click)="login()">Login</button>
+    <button class="v-sub" mat-raised-button *ngIf="loggedIn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+</header>

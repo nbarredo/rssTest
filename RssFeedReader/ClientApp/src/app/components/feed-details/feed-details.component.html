@@ -1,0 +1,25 @@
+ <span *ngIf="feed">
+   <h1>Feed Details</h1>
+
+   <app-feed-card [feed]="feed" [feedId]="id">
+
+   </app-feed-card>
+   <mat-form-field class="example-form-field">
+    <mat-label>Search for news</mat-label>
+    <input matInput type="text" [(ngModel)]="search">
+    <button mat-button *ngIf="search" matSuffix mat-icon-button aria-label="Clear" (click)="search=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+   <div>
+     Items
+   </div>
+   <mat-grid-list cols="2" rowHeight="200px">
+     <mat-grid-tile *ngFor="let item of feed.items | filterNews:search">
+       <app-feed-item-card [feedItem]="item" [feedName]="feed.title">
+
+       </app-feed-item-card>
+     </mat-grid-tile>
+   </mat-grid-list>
+ </span>
